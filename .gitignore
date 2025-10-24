@@ -1,0 +1,19 @@
+# Archivos temporales y cachés
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.DS_Store
+
+# Configuración local
+.env
+.vscode/
+.idea/
+
+# Archivos grandes o locales
+*.xlsx
+
+# Streamlit y cache local
+.streamlit/
+.cache/

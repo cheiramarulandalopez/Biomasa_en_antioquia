@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcula tu consumo</title>
+  <link rel="icon" href="https://images.icon-icons.com/1512/PNG/512/24_104862.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="text-center py-4 text-white eco-header">
+    <h1 class="text-uppercase fw-bold mb-3">Bio Volt</h1>
+    <a href="#">
+      <img src="https://images.icon-icons.com/1512/PNG/512/24_104862.png" alt="foco y planta" class="img-fluid" style="max-height:150px;">
+    </a>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="background: linear-gradient(to right, #4CAF50, #2E7D32);">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white fw-bold" href="index.html">
+        <img src="https://images.icon-icons.com/1512/PNG/512/24_104862.png" alt="Logo" width="30" height="30" class="me-2">
+        BioVolt
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="Como funciona.html">¿Cómo funciona?</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="Como se transforma.html">¿Cómo se transforma en energía?</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="Formulario.html">Calcula tu consumo</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="biomasa_antioquia.html">Biomasa en Antioquia</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Formulario -->
+  <main class="container my-5">
+    <div class="card shadow-lg p-4 mx-auto" style="max-width: 800px;">
+      <form>
+        <h2 class="text-center mb-4 fw-bold">♻️ Residuos orgánicos generados</h2>
+        <div class="alert alert-info" role="alert">
+          <h4 class="alert-heading">¿Sabías qué?</h4>
+          <p>Los residuos orgánicos pueden transformarse en biogás, una fuente de energía limpia que ayuda a reducir la contaminación y genera electricidad renovable.</p>
+          <hr>
+          <p class="mb-0">¡Contribuye al medio ambiente reciclando tus residuos!</p>
+        </div>
+
+        <div class="mb-4">
+          <label for="Residuosorganicos" class="form-label">Residuos orgánicos generados por día (kg):</label>
+          <input type="number" id="Residuosorganicos" class="form-control" placeholder="Ejemplo: 2.5">
+        </div>
+
+        <button id="btnResiduos" type="button" class="d-grid mt-4">Calcular energía generada</button>
+        <h4 id="resultadoResiduos" class="text-center mt-4"></h4>
+
+        <hr class="my-5">
+
+        <h2 class="text-center mb-4 fw-bold">⚡ Calculadora de eficiencia energética</h2>
+        <div class="mb-3">
+          <label for="energiaUtilizada" class="form-label">Energía Utilizada (kWh):</label>
+          <input type="number" id="energiaUtilizada" class="form-control" placeholder="Ejemplo: 50">
+        </div>
+
+        <div class="mb-3">
+          <label for="energiaProducida" class="form-label">Energía Producida (kWh):</label>
+          <input type="number" id="energiaProducida" class="form-control" placeholder="Ejemplo: 40">
+        </div>
+
+        <button id="btnEficiencia" type="button" class="d-grid mt-4">Calcular eficiencia</button>
+        <h4 id="resultadoEficiencia" class="text-center mt-4"></h4>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-5">
+          <h6>Acerca de</h6>
+          <p>Somos BioVolt, un espacio para la visibilización de la energía biomasa.</p>
+        </div>
+        <div class="col-sm-12 col-lg-5 d-flex align-items-center">
+          <p class="mb-0">&copy; 2025 BioVolt - Todos los derechos reservados.<br>Desarrollado por Alejandro Chala, Esteban Acosta, Cheira Marulanda y Gustavo Correa.</p>
+        </div>
+        <div class="col-sm-12 col-lg-2">
+          <h6>Redes sociales</h6>
+          <ul class="list-unstyled d-flex gap-3">
+            <li><a href="https://www.instagram.com/" class="text-white fs-5"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/" class="text-white fs-5"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://discord.com/" class="text-white fs-5"><i class="bi bi-discord"></i></a></li>
+            <li><a href="https://www.whatsapp.com/" class="text-white fs-5"><i class="bi bi-whatsapp"></i></a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="Formulario.js"></script>
+</body>
+</html>
